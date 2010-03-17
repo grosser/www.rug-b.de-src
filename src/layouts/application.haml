@@ -1,7 +1,12 @@
 !!! 5
 %html
   %head
-    %title RubyUserGroup::Berlin
+    %title Ruby User Group - Berlin
     = stylesheets
   %body
-    = yield
+    %h1 <em>R</em>uby <em>User</em> <em>G</em>roup - Berlin
+    .sidebar
+      %h2= link '::Meetings', '/meetings'
+      %h2 ::Feed
+      %h2 ::Tweets
+    .main= yield
